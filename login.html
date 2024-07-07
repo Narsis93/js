@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <nav id="mainNav">
+      <ul style="display: inline-flex; text-decoration: none">
+        <a href="INDEX.html">home</a>
+        <a href="login.html">login</a>
+        <a href="contact.html">contact</a>
+      </ul>
+    </nav>
+    <div class="login-page">
+      <div class="form">
+        <input type="text" placeholder="username" class="username" />
+        <input type="password" placeholder="password" class="password" />
+
+        <button onclick="dataValidation()" class="Button">login</button>
+
+        <p class="message">
+          Not registered? <a href="sabtenam.html">Create an account</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="feedback-modal" style="text-align: center">
+      لطفا اطلاعات لازم را به درستی وارد کنید
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

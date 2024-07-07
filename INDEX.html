@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="mainNav">
+      <ul style="display: inline-flex; text-decoration: none">
+        <a href="INDEX.html">home</a>
+        <a href="login.html">login</a>
+        <a href="contact.html">contact</a>
+      </ul>
+    </nav>
+    <section>
+      <div class="center">
+        <h1>Click the button for more information!</h1>
+        <button type="button" class="show" onclick="showModal()">
+          Click for information
+        </button>
+      </div>
+    </section>
+
+    <div class="modal-parent" style="display: none">
+      <div class="modal">
+        <p>
+          Our credit team identifies, evaluates, and invests in both private and
+          public credit strategies. Whatever your investment objectives, we’re
+          positioned to identify high conviction credit opportunities to help
+          you meet them. Credit investments span a wide breadth of strategies
+          and return profiles. Private strategies include senior debt,
+          subordinated capital, credit opportunities, distressed credit, and
+          specialty finance. Public strategies include investment-grade,
+          high-yield, and inflation-linked bonds, along with structured credit,
+          and credit hedge funds.
+        </p>
+        <h4><a href="contact.html">contact us</a></h4>
+        <span
+          class="X"
+          onclick="hideModal()"
+          onmouseover="style.color='red'"
+          onmouseout="style.color='black'"
+          >&times;</span
+        >
+      </div>
+    </div>
+
+    <div class="feedback-modal" style="display: none"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

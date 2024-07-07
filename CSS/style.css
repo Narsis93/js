@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+body {
+  background-image: url("../images/modal-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 3500px;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+section {
+  background-image: url("../images/modal-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  transition: filter 2s;
+}
+.center {
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  margin: 40px;
+  text-transform: capitalize;
+}
+.show {
+  margin: 0 auto;
+  height: 60px;
+  width: 500px;
+  background: #5454ff;
+  border: none;
+  border-radius: 6px;
+  font-size: 25px;
+  color: #000;
+  cursor: pointer;
+}
+.modal-parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal {
+  background: white;
+  width: 70%;
+  padding: 30px;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  animation: drop 0.5s;
+}
+@keyframes drop {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 50%;
+  }
+}
+.X {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #43a047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4caf50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before,
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #ef3b3a;
+}
+.feedback-modal {
+  background-color: rgb(223, 28, 28);
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 999;
+  right: 10px;
+  top: 10px;
+  transition: all 1s linear;
+}
+#mainNav .logo img {
+  height: 84px;
+  transition: height 0.2s;
+}
+#mainNav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px 16px;
+  margin-left: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  color: #f2f2f2;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+.bg-black {
+  background: #e7e5e5 !important;
+}
+.txt-white a {
+  color: #f7eeee !important;
+  text-decoration: none;
+  position: fixed;
+}
+.text {
+  text-align: center;
+  color: #f7eeee;
+}
+#book-form {
+  margin-top: 20px;
+  text-align: center;
+  color: #e7e5e5;
+  padding: 15px;
+}
+th {
+  margin-top: 15px;
+
+  color: #e7e5e5;
+}
+table {
+  margin-top: 20px;
+  width: 70%;
+}
+::selection {
+  color: #fff;
+  background: #664aff;
+}

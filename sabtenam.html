@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+   
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/flatly/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav id="mainNav">
+      <ul style="display: inline-flex; text-decoration: none">
+        <a href="INDEX.html">home</a>
+        <a href="login.html">login</a>
+        <a href="contact.html">contact</a>
+      </ul>
+    </nav>
+    <br />
+    
+      <form id="book-form" autocomplete="off">
+        <div class="form-group">
+          <label for="title">FULL NAME</label>
+          <input type="text" id="title" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="author">NUMBER</label>
+          <input type="number" id="author" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="year">BORN</label>
+          <input type="number" id="year" class="form-control" />
+        </div>
+        <input
+          type="submit"
+          value="Add USER"
+          class="btn btn-warning btn-block add-btn"
+        />
+      </form>
+      <table class="table table-striped mt-5 text-center">
+        <thead>
+          <tr>
+            <th>FULL NAME</th>
+            <th>NUMBER</th>
+            <th>BORN</th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
